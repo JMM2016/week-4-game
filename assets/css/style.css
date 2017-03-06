@@ -1,17 +1,88 @@
+body {
+	background-image: url(../images/bg.png);	
+}	
+
 div {
 	padding: 5px;
+	margin: 5px;
+}
+
+header {
+	background: #C82027;
+	width: 25%;
+	margin: 5px;	
+	padding: 15px;	
+	color: #ffffff;
+	font-family: 'Gidugu', sans-serif;
 }
 
 h1 {
-	font-size: 35px;
+	font-size: 55px;
+}
+
+ /* This parent can be any width and height */
+.block {
+  text-align: center; 
+}
+ 
+/* The ghost, nudged to maintain perfect centering */
+.block:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em; /* Adjusts for spacing */
+}
+
+/* The element to be centered, can also be of any width and height */ 
+.centered {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
 }
 
 p {
 	padding-top: 10px; /* to make Losses not touch Wins */
 }
 
-img {
-	padding: 0px;
-	/*height: 50px;
-	width: 50px;*/
+img {	
+	padding: 0px;	
+	height: 60px;
+	width: 60px;
+}
+
+#crystals {
+	clear: both;
+}
+
+#instructions {
+	background: #b3b3b3;
+	width: 34%;
+	color: #1f1a4f;
+	padding: 10px;
+}	
+
+#match {
+	background: #1f1a4f;
+	font-size: 25px;
+	color: #ffffff;
+	width: 15%;
+	float: left;
+}
+
+#record {
+	float: left;
+	background:  #3366CC;
+	color: #ffffff;
+}
+
+#total, #score {
+	width: 15%;
+	background: #1f1a4f;
+	color: #ffffff;
+}
+
+#score {
+	font-size: 25px;
+	background: #C82027;
 }
